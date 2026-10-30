@@ -1,0 +1,723 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <title>Title</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+        <!-- Bootstrap CSS v5.3.8 -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+            crossorigin="anonymous"
+        />
+
+        <style>
+            *{
+                padding: 0%;
+                margin: 0%;
+            }
+
+            /* nav-item{
+                display: flex;
+                justify-content: center;
+                margin-right: 60%;
+            }
+
+            nav-link {
+                
+                display: flex;
+                justify-content: center;
+                
+            } */
+            header{
+                border-bottom: #d6d5d5 2px solid;
+            }
+            .navbar{
+                display: flex;
+                justify-content: space-between;
+                width: 1100px;
+                padding-left: 80px;
+                margin-top: 20px;
+                align-items: center;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 20px;
+                list-style: none;
+            }
+            a{
+                color: black;
+                text-decoration:none ;
+            }
+            .logo{
+                padding: 0%;
+                height: 100px;
+                width: 100px;
+            }
+
+            .hero{
+                background-color: lightcoral;
+                height: 400px;
+                width: 80%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .btn-shop{
+                margin-top: 30px;
+                padding: 20px;
+                font-size: 20px;
+                background-color: #222;
+                border-radius: 50px;
+                color: #fff;
+            }
+
+            .btn4{
+                display: flex;
+               justify-content: center;
+               align-items: center;
+                margin-top: 30px;
+                padding: 20px;
+                font-size: 20px;
+                background-color: #222;
+                color: #fff;
+            }
+
+            .btn-shop:hover{
+                background-color: rgb(50, 98, 50);
+                cursor:pointer;
+                transform: translateY(-10px);
+            }
+
+            .hero{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(250, 245, 239);
+            }
+
+            .container{
+                display: flex;
+                justify-content: center;
+                padding: 20px;
+                align-items: center;
+            }
+
+            .row{
+                display: flex;
+                justify-content: center;
+            }
+
+            .heading{
+                background-color: rgb(109, 74, 55);
+                color: #fff;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .text{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .fat{
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+                gap: 12px;
+            }
+            .star{
+                color: black;
+            }
+
+            .sec{
+                background-color: rgb(109, 74, 55);
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 20px;
+                gap: 10px;
+            }
+
+            .textss{
+                color: white;
+                margin-top: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .type{
+                margin-left: 30px;
+            }
+
+            .btnplus{
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                margin-left: 80%;
+            }       
+
+            .btnplus:hover{
+                transform: translateY(-5px);
+                background-color: black;
+                color: white;
+            }
+            .card-img-top{
+                height: 200px;
+            }
+
+            .joy{
+                background-color: rgb(250, 245, 239);
+            }
+
+            /* .logoos{
+                display: flex;
+                justify-content: center;
+            }
+
+            .logos{
+                display: flex;
+                justify-content: center;
+            } */
+
+            .little{
+                color: rgb(176, 158, 56);
+            }
+
+            .litt{
+                color: black;
+            }
+
+            .foot{
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(109, 74, 55) ;
+                margin-top: 20px;
+                
+            }
+            .best{
+                flex-direction: column;
+                color: white;
+                row-gap: 50px;
+                margin-top: 20px;
+            }
+
+            /* .footer{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 400px;
+                width: 100%;
+                background-color: rgb(48, 35, 29 );
+                 /* flex-direction: row; */
+                /* color: white; */
+                
+             */
+
+            /* .mains{
+                flex-direction: row;
+            } */
+
+            .fats{
+                flex-direction: row;
+            }
+
+            .footer {           
+  background-color: #30231D; 
+  color: #FFF8F0;
+  padding: 40px 20px;
+  font-family: 'Poppins', sans-serif;
+            }
+
+            .footer-container {         
+                max-width: 1200px;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .footer-logo {          
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            .logo-icon {            
+                width: 45px;
+                height: 45px;
+                border: 2px solid #FFF8F0;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+                font-size: 22px;
+            }
+
+            .logo-text h3 {
+                margin: 0;
+                font-size: 20px;
+                line-height: 1; 
+            }
+
+            .logo-text span {
+            font-size: 10px;
+            letter-spacing: 2px;
+             opacity: 0.8;
+            }
+
+            .tagline {
+            font-size: 22px;
+            font-style: italic;
+            font-weight: 500;
+             margin: 0 0 10px 0;
+            }
+
+            .copyright {
+            font-size: 12px;
+            opacity: 0.6;
+            margin: 0;
+            }
+
+        .footer-right ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            }
+
+            .footer-right ul li {
+            margin-bottom: 8px;
+            }
+
+            .footer-right ul li a {         
+            color: #FFF8F0;
+            text-decoration: none;
+            font-size: 14px;
+            opacity: 0.8;
+            transition: 0.3s;
+            }
+
+            .footer-right ul li a:hover {           
+                opacity: 1;
+                text-decoration: underline;
+            }
+
+            @media (max-width: 768px) {         
+            .footer-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            .footer-right ul {
+                display: flex;
+                gap: 15px;
+            }
+            }
+
+            /* body{font-family:Arial;background:#fffbf5;margin:0} */
+header{
+    padding:15px;
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #eee;
+}
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:10px;
+    padding:10px;
+}
+@media(min-width:600px){
+    .grid{grid-template-columns:repeat(4,1fr)}
+}
+.card{
+    background:#fff;
+    border:1px solid #eee;
+    border-radius:10px;
+    overflow:hidden
+}
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;}
+.card div{padding:10px}
+button{
+    cursor:pointer;
+}
+.tabs{
+    padding:10px;
+    display:flex;
+    gap:5px;
+    overflow:auto;
+}
+.tabs button{
+    padding:8px 15px;
+    border-radius:20px;
+    border:1px solid #ddd;
+    background:#fff;
+}
+.tabs button.active{
+    background:#30231D;
+    color:#fff;
+}
+#popup{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:none;
+    place-items:center;
+}
+#popup.show{
+    display:grid;
+}
+.box{
+    background:#fff;
+    width:90%;
+    max-width:400px;
+    border-radius:15px;
+    overflow:hidden;
+}
+.box img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+.box div{
+    padding:15px;
+}
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h5 class="heading">Freshly baked every day ✦ Made with love, butter & the finest ingredients</h5>
+            <nav class="navbar">
+            <p class="logo">
+                <img src="images/logo_2-removebg-preview.png" alt="" height="80px" width="100px">
+                <!-- <h4 class="logoos">Bakerz Bite</h4>
+                <h6 class="logos">BAKERY · CAFÉ</h6> -->
+            </p>
+            <ul class="ul">
+                <li><a href="">HOME</a></li>
+                <li><a href="">Our Bakery</a></li>
+                <li><a href="">Merchandise</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">Our Story</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            </nav>            
+        </header>
+
+        <section>
+                <!-- <div class="container"> -->
+                    <div class="hero">
+                        <div class="row">
+                        <div class="col-6">
+                           <h6>___ BAKED FRESH, SHARED WITH LOVE</h6>
+                            <h1 class="text" > A little sweetness goes a long way.</h1>
+                            <p class="text">Thoughtfully baked treats, beautiful cakes and small moments of happiness — made fresh for your table.</p>
+                            <button class="btn-shop">
+                                Explore the bakery
+                            </button>
+                            <p>Our story →</p>
+                            <h6 class="text">★★★★★Made fresh daily · Quality ingredients</h6>
+                        </div>
+                        <div class="col-6">
+                            <img src="images/imgs-removebg-preview.png" alt="" height="450px" width="450px">
+                        </div>
+                    </div>
+                    </div>
+                <!-- </div> -->
+
+                <div class="fat">
+                    <div class="row">
+                        <div class="col-3">
+                            ✳  <h6 class="star">Fresh every day</h6>
+                                <p>Small-batch goodness</p>
+                        </div>
+                        <div class="col-3">
+                            ♧   <h6 class="star">Quality ingredients</h6>
+                                Real butter & cream
+                        </div>
+                        <div class="col-3">
+                            ♡   <h6 class="star">Made with love</h6>
+                                <p>A treat for everyone</p>
+                        </div>
+                        <div class="col-3">
+                            ✦  <h6 class="star">Little celebrations</h6>
+                                <p>Big happy memories</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <div style="padding:15px">
+                <h2>Explore our bakery</h2>
+                <p style="font-size:13px;color:gray">Find your next happy bite</p>
+                </div>
+
+                <div class="tabs">
+                <button class="active" onclick="filterCat('all',this)">All</button>
+                <button onclick="filterCat('Cakes',this)">Cakes</button>
+                <button onclick="filterCat('Pastries',this)">Pastries</button>
+                <button onclick="filterCat('Cookies',this)">Cookies</button>
+                <button onclick="filterCat('Pies',this)">Pies</button>
+                </div>
+
+                <input id="search" placeholder="Search..." style="width:90%;margin:10px;padding:10px;border-radius:8px;border:1px solid #ddd" oninput="searchItem()">
+
+                <div class="grid" id="grid"></div>
+
+                <div id="popup" onclick="closePop()">
+                <div class="box" onclick="event.stopPropagation()">
+                <img id="pImg"><div>
+                <h3 id="pTitle"></h3>
+                <p id="pPrice"></p>
+                <p id="pDesc" style="font-size:13px;color:gray"></p>
+                <button onclick="add()" style="width:100%;padding:12px;background:#30231D;color:#fff;border:none;border-radius:8px;margin-top:10px">Add to basket</button>
+                </div></div>
+                </div>
+
+            <section>
+                <div class="container">
+                    <div class="sec">
+                        <div class="row">
+                            <div class="col-6">
+                                <h6 class="textss">A LITTLE THANK-YOU FROM US</h6>
+                                <h1 class="text">Good things comein sweet packages.</h1>
+                                <h6 class="textss">Make your next get-together extra lovely with our bakery favourites.</h6>
+                                <button class="btn4">
+                                    Find your favourite ↗
+                                </button>
+                            </div>
+                            <div class="col-6">
+                                <img src="images/hero sec.jpeg" alt="" height="400px" width="539px">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="joy">
+                    <p class="type">TAKE A LITTLE JOY HOME</p>
+                    <h1 class="type">Bakery merchandise</h1>
+                    <p class="type">A few everyday essentials, with a little Bakerz Bite magic.</p>
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="images/cup.jpeg" alt="Title" />
+                                <div class="card-body">
+                                    <p class="card-text">Merchandise</p>
+                                    <h4 class="card-title">Bakerz Bite Mug</h4>
+                                    <p class="card-text">Rs:750</p>
+                                    <button class="btnplus">+</button>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="images/gift.jpeg" alt="Title" />
+                                <div class="card-body">
+                                    <p class="card-text">Merchandise</p>
+                                    <h4 class="card-title">Canvas Bakery Tote</h4>
+                                    <p class="card-text">Rs:950</p>
+                                    <button class="btnplus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="images/bag.jpeg" alt="Title" />
+                                <div class="card-body">
+                                    <p class="card-text">Merchandise</p>
+                                    <h4 class="card-title">Bakerz Bite Glass</h4>
+                                    <p class="card-text">Rs:600</p>
+                                    <button class="btnplus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card">
+                                <img class="card-img-top" src="images/glass.jpeg" alt="Title" />
+                                <div class="card-body">
+                                    <p class="card-text">Merchandise</p>
+                                    <h4 class="card-title">Serving Tray</h4>
+                                    <p class="card-text">Rs 1,250</p>
+                                    <button class="btnplus">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            <section>
+                <div class="container">
+                    <div class="fry">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="images/fry item.jpeg" alt="" height="400px" width="500px">
+                        </div>
+                        <div class="col-6">
+                            <p class="little">A LITTLE ABOUT US</p>
+                            <h1 class="litt">Where smiles are served daily.</h1>
+                            <p class="bakers">At Bakerz Bite, we believe the best memories often begin around a table. That's why we make our baked goods with care, quality ingredients, and a whole lot of heart.</p>
+                            <p class="from">From artisan pastries and gourmet cakes to comforting cookies and handcrafted treats, every creation is an invitation to slow down and enjoy something lovely.</p>
+                            <p class="little">Come say hello →</p>
+                        </div>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+        <main>
+            <div class="">
+
+            </div>
+        </main>  
+        <footer>
+            <section>
+                <div class="foot">
+                    <p class="">LET'S MAKE SOMETHING SWEET</p>
+                    <h1>Drop by for a treat.</h1>
+                    <p>Questions, celebrations, or just saying hello — we'd love to hear from you.</p>
+                    <div class="row">
+                        <div class=" best col-4">
+                                ✉
+                            EMAIL US
+                            hello@bakerzbite.example
+                        </div>
+                        <div class=" best col-4">
+                                ⌖
+                            FIND US
+                            Bakery Street, Karachi, Pakistan
+                        </div>
+                        <div class=" best col-4">
+                                ☏
+                            CALL US
+                            +92 000 0000000
+                        </div>
+                    </div>
+                    <p>Sample contact details — replace these with the bakery's verified information before publishing.</p>
+                </div>
+            </section>
+
+            <footer class="footer">
+  <div class="footer-container">
+    
+    <div class="footer-left">
+      <div class="footer-logo">
+        <div class="logo-icon">B</div>
+        <div class="logo-text">
+          <h3>Bakerz Bite</h3>
+          <span>BAKERY - CAFÉ</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-center">
+      <h2 class="tagline">Where smiles are served daily.</h2>
+      <p class="copyright">© 2026 Bakerz Bite. Made with care.</p>
+    </div>
+
+    <div class="footer-right">
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">Sitemap</a></li>
+      </ul>
+    </div>
+
+  </div>
+</footer>
+        <!-- Bootstrap JavaScript Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <script>
+let products = [
+{id:1,title:"Rose Cake",price:2450,cat:"Cakes",img:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",desc:"Soft vanilla cake with rose"},
+{id:2,title:"Chocolate Cake",price:2850,cat:"Cakes",img:"https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400",desc:"Rich chocolate fudge"},
+{id:3,title:"Butter Croissant",price:380,cat:"Pastries",img:"https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400",desc:"Flaky and buttery"},
+{id:4,title:"Choc Chip Cookies",price:250,cat:"Cookies",img:"https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400",desc:"Soft cookies with chocolate"},
+{id:5,title:"Apple Pie",price:590,cat:"Pies",img:"https://images.unsplash.com/photo-1535920527002-b8d367b224cb?w=400",desc:"Apple crumble pie"},
+{id:6,title:"Strawberry Cake",price:2200,cat:"Cakes",img:"https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400",desc:"Fresh strawberries"},
+{id:7,title:"Cinnamon Swirl",price:320,cat:"Pastries",img:"https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",desc:"Cinnamon sugar swirl"},
+{id:8,title:"Almond Danish",price:420,cat:"Pastries",img:"https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400",desc:"Almond filling pastry"},
+{id:9,title:"Oat Cookies",price:220,cat:"Cookies",img:"https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=400",desc:"Oat and raisin"},
+{id:10,title:"Lemon Pie",price:650,cat:"Pies",img:"https://images.unsplash.com/photo-1519915028121-0d34667d20b0?w=400",desc:"Lemon meringue"},
+{id:11,title:"Red Velvet Box",price:950,cat:"Cakes",img:"https://images.unsplash.com/photo-1599785209707-a456fc1337bb?w=400",desc:"Mini red velvet cupcakes"},
+{id:12,title:"Brownie",price:290,cat:"Cookies",img:"https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400",desc:"Fudgy chocolate brownie"}
+];
+
+let current = null;
+let count = 0;
+
+function show(list){
+  document.getElementById('grid').innerHTML = list.map(p=>`
+    <div class="card" onclick="openPop(${p.id})">
+      <img src="${p.img}">
+      <div><b>${p.title}</b><br><small>${p.cat}</small><br><b>Rs ${p.price}</b></div>
+    </div>
+  `).join('');
+}
+
+function openPop(id){
+  current = products.find(p=>p.id==id);
+  pImg.src = current.img;
+  pTitle.innerText = current.title;
+  pPrice.innerText = "Rs " + current.price;
+  pDesc.innerText = current.desc;
+  popup.classList.add('show');
+}
+function closePop(){popup.classList.remove('show')}
+
+function add(){
+  count++; cart.innerText = count;
+  alert(current.title + " added");
+  closePop();
+}
+
+function filterCat(cat,btn){
+  document.querySelectorAll('.tabs button').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  if(cat=='all') show(products);
+  else show(products.filter(p=>p.cat==cat));
+}
+
+function searchItem(){
+  let v = search.value.toLowerCase();
+  show(products.filter(p=>p.title.toLowerCase().includes(v)));
+}
+
+show(products);
+</script>
+    </body>
+</html>
